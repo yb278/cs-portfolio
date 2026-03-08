@@ -52,11 +52,11 @@ export default function Navbar() {
             className="flex items-center gap-2 group"
             whileHover={{ scale: 1.02 }}
           >
-            <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-indigo-500 to-cyan-400 flex items-center justify-center shadow-lg shadow-indigo-500/30">
+            <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-emerald-500 to-emerald-400 flex items-center justify-center shadow-lg shadow-emerald-500/30">
               <Code2 className="w-4 h-4 text-white" />
             </div>
             <span className="text-white font-bold text-lg tracking-tight" style={{ fontFamily: "'Syne', sans-serif" }}>
-              dev<span className="text-indigo-400">.</span>portfolio
+              dev<span className="text-emerald-400">.</span>portfolio
             </span>
           </motion.a>
 
@@ -68,7 +68,7 @@ export default function Navbar() {
             <motion.a
               href="#contact"
               onClick={(e) => { e.preventDefault(); handleNavClick("#contact"); }}
-              className="px-4 py-2 rounded-lg bg-indigo-600/20 border border-indigo-500/30 text-indigo-300 text-sm font-medium hover:bg-indigo-600/30 hover:border-indigo-400/50 transition-all duration-200"
+              className="px-4 py-2 rounded-lg bg-emerald-600/20 border border-emerald-500/30 text-emerald-300 text-sm font-medium hover:bg-emerald-600/30 hover:border-emerald-400/50 transition-all duration-200"
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.97 }}
             >
@@ -121,7 +121,7 @@ function NavLink({ label, href, onClick }: { label: string; href: string; onClic
       className="relative text-slate-400 hover:text-white text-sm font-medium transition-colors duration-200 group"
     >
       {label}
-      <span className="absolute -bottom-0.5 left-0 w-0 h-px bg-gradient-to-r from-indigo-400 to-cyan-400 group-hover:w-full transition-all duration-300" />
+      <span className="absolute -bottom-0.5 left-0 w-0 h-px bg-gradient-to-r from-emerald-400 to-emerald-300 group-hover:w-full transition-all duration-300" />
     </button>
   );
 }

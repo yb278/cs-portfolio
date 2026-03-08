@@ -38,8 +38,8 @@ export default function AboutSection() {
   return (
     <section id="about" className="py-24 md:py-32 bg-[#070d1a] relative overflow-hidden">
       {/* Subtle background glow */}
-      <div className="absolute top-0 right-0 w-96 h-96 bg-indigo-600/5 rounded-full blur-[100px] pointer-events-none" />
-      <div className="absolute bottom-0 left-0 w-64 h-64 bg-cyan-400/5 rounded-full blur-[80px] pointer-events-none" />
+      <div className="absolute top-0 right-0 w-96 h-96 bg-emerald-600/5 rounded-full blur-[100px] pointer-events-none" />
+      <div className="absolute bottom-0 left-0 w-64 h-64 bg-emerald-400/5 rounded-full blur-[80px] pointer-events-none" />
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section label */}
@@ -47,14 +47,14 @@ export default function AboutSection() {
           initial={{ opacity: 0, x: -20 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
+          transition={{ duration: 0.5 }}
           className="flex items-center gap-3 mb-16"
         >
-          <span className="text-indigo-400 font-mono text-sm tracking-[0.3em] uppercase">01 /</span>
+          <span className="text-emerald-400 font-mono text-sm tracking-[0.3em] uppercase">01 /</span>
           <span className="text-white font-bold text-3xl md:text-4xl" style={{ fontFamily: "'Syne', sans-serif" }}>
             About Me
           </span>
-          <div className="flex-1 h-px bg-gradient-to-r from-indigo-500/30 to-transparent ml-4" />
+          <div className="flex-1 h-px bg-gradient-to-r from-emerald-500/30 to-transparent ml-4" />
         </motion.div>
 
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
@@ -76,8 +76,8 @@ export default function AboutSection() {
             <motion.div variants={itemVariants} className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-10">
               {highlights.map(({ icon: Icon, text }) => (
                 <div key={text} className="flex items-center gap-3 text-slate-400 text-sm">
-                  <div className="w-8 h-8 rounded-lg bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center flex-shrink-0">
-                    <Icon className="w-4 h-4 text-indigo-400" />
+                  <div className="w-8 h-8 rounded-lg bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center flex-shrink-0">
+                    <Icon className="w-4 h-4 text-emerald-400" />
                   </div>
                   {text}
                 </div>
@@ -88,7 +88,7 @@ export default function AboutSection() {
             <motion.div variants={itemVariants} className="grid grid-cols-4 gap-4">
               {stats.map(({ value, label }) => (
                 <div key={label} className="text-center">
-                  <div className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-br from-indigo-300 to-cyan-300 mb-1" style={{ fontFamily: "'Syne', sans-serif" }}>
+                  <div className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-br from-emerald-300 to-emerald-200 mb-1" style={{ fontFamily: "'Syne', sans-serif" }}>
                     {value}
                   </div>
                   <div className="text-slate-500 text-xs leading-tight">{label}</div>
@@ -107,7 +107,7 @@ export default function AboutSection() {
           >
             <div className="relative">
               {/* Glow ring */}
-              <div className="absolute -inset-4 rounded-3xl bg-gradient-to-br from-indigo-500/20 to-cyan-500/10 blur-xl" />
+              <div className="absolute -inset-4 rounded-3xl bg-gradient-to-br from-emerald-500/20 to-emerald-500/10 blur-xl" />
               {/* Card */}
               <div className="relative w-72 h-72 md:w-80 md:h-80 rounded-3xl overflow-hidden border border-white/10 bg-white/5 backdrop-blur-sm shadow-2xl shadow-indigo-900/30">
                 <img
@@ -123,10 +123,10 @@ export default function AboutSection() {
               <motion.div
                 animate={{ y: [-4, 4, -4] }}
                 transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
-                className="absolute -bottom-4 -right-4 bg-[#0d1629] border border-indigo-500/30 rounded-2xl px-4 py-3 shadow-xl"
+                className="absolute -bottom-4 -right-4 bg-[#0d1629] border border-emerald-500/30 rounded-2xl px-4 py-3 shadow-xl"
               >
                 <div className="flex items-center gap-2">
-                  <div className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
+                  <div className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
                   <span className="text-white text-sm font-medium">Open to Work</span>
                 </div>
               </motion.div>

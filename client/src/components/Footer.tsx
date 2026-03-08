@@ -12,7 +12,7 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-2">
-            <div className="w-6 h-6 rounded-md bg-gradient-to-br from-indigo-500 to-cyan-400 flex items-center justify-center">
+            <div className="w-6 h-6 rounded-md bg-gradient-to-br from-emerald-500 to-emerald-400 flex items-center justify-center">
               <Code2 className="w-3 h-3 text-white" />
             </div>
             <span className="text-slate-500 text-sm font-mono">dev.portfolio</span>
@@ -24,7 +24,7 @@ export default function Footer() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5 }}
           >
-            Built with <Heart className="w-3 h-3 text-indigo-500 fill-indigo-500" /> using React & Framer Motion
+            Built with <Heart className="w-3 h-3 text-emerald-500 fill-emerald-500" /> using React & Framer Motion
           </motion.p>
 
           <p className="text-slate-600 text-xs font-mono">

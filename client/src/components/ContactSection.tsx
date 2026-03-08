@@ -33,7 +33,7 @@ export default function ContactSection() {
   return (
     <section id="contact" className="py-24 md:py-32 bg-[#050a14] relative overflow-hidden">
       {/* Background glows */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-indigo-600/8 rounded-full blur-[100px] pointer-events-none" />
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-emerald-600/8 rounded-full blur-[100px] pointer-events-none" />
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section label */}
@@ -44,11 +44,11 @@ export default function ContactSection() {
           transition={{ duration: 0.5 }}
           className="flex items-center gap-3 mb-16"
         >
-          <span className="text-indigo-400 font-mono text-sm tracking-[0.3em] uppercase">04 /</span>
+          <span className="text-emerald-400 font-mono text-sm tracking-[0.3em] uppercase">04 /</span>
           <span className="text-white font-bold text-3xl md:text-4xl" style={{ fontFamily: "'Syne', sans-serif" }}>
             Get In Touch
           </span>
-          <div className="flex-1 h-px bg-gradient-to-r from-indigo-500/30 to-transparent ml-4" />
+          <div className="flex-1 h-px bg-gradient-to-r from-emerald-500/30 to-transparent ml-4" />
         </motion.div>
 
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-start">
@@ -85,11 +85,11 @@ export default function ContactSection() {
             </div>
 
             {/* Direct email */}
-            <div className="mt-10 p-4 rounded-xl border border-indigo-500/20 bg-indigo-500/5">
+            <div className="mt-10 p-4 rounded-xl border border-emerald-500/20 bg-emerald-500/5">
               <p className="text-slate-500 text-xs font-mono mb-1">Direct email</p>
               <a
                 href="mailto:your@email.com"
-                className="text-indigo-300 hover:text-indigo-200 transition-colors font-medium"
+                className="text-emerald-300 hover:text-emerald-200 transition-colors font-medium"
               >
                 your@email.com
               </a>
@@ -113,18 +113,18 @@ export default function ContactSection() {
                     value={form.name}
                     onChange={(e) => setForm({ ...form, name: e.target.value })}
                     placeholder="Your name"
-                    className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-slate-600 text-sm focus:outline-none focus:border-indigo-500/50 focus:bg-white/8 transition-all duration-200"
-                  />
-                </div>
-                <div>
-                  <label className="block text-slate-400 text-xs font-mono mb-2 tracking-wide uppercase">Email</label>
-                  <input
-                    type="email"
-                    required
-                    value={form.email}
-                    onChange={(e) => setForm({ ...form, email: e.target.value })}
-                    placeholder="your@email.com"
-                    className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-slate-600 text-sm focus:outline-none focus:border-indigo-500/50 focus:bg-white/8 transition-all duration-200"
+                  className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-slate-600 text-sm focus:outline-none focus:border-emerald-500/50 focus:bg-white/8 transition-all duration-200"
+                />
+              </div>
+              <div>
+                <label className="block text-slate-400 text-xs font-mono mb-2 tracking-wide uppercase">Email</label>
+                <input
+                  type="email"
+                  required
+                  value={form.email}
+                  onChange={(e) => setForm({ ...form, email: e.target.value })}
+                  placeholder="your@email.com"
+                  className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-slate-600 text-sm focus:outline-none focus:border-emerald-500/50 focus:bg-white/8 transition-all duration-200"
                   />
                 </div>
               </div>
@@ -137,7 +137,7 @@ export default function ContactSection() {
                   value={form.message}
                   onChange={(e) => setForm({ ...form, message: e.target.value })}
                   placeholder="Tell me about your project or just say hello..."
-                  className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-slate-600 text-sm focus:outline-none focus:border-indigo-500/50 focus:bg-white/8 transition-all duration-200 resize-none"
+                  className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-slate-600 text-sm focus:outline-none focus:border-emerald-500/50 focus:bg-white/8 transition-all duration-200 resize-none"
                 />
               </div>
 
@@ -145,7 +145,7 @@ export default function ContactSection() {
                 type="submit"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
-                className="w-full flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-gradient-to-r from-indigo-600 to-indigo-500 hover:from-indigo-500 hover:to-cyan-500 text-white font-semibold text-sm transition-all duration-300 shadow-lg shadow-indigo-900/30 hover:shadow-indigo-500/30"
+                className="w-full flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-gradient-to-r from-emerald-600 to-emerald-500 hover:from-emerald-500 hover:to-teal-500 text-white font-semibold text-sm transition-all duration-300 shadow-lg shadow-emerald-900/30 hover:shadow-emerald-500/30"
               >
                 {sent ? (
                   <>

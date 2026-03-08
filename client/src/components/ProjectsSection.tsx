@@ -56,7 +56,7 @@ const statusColors: Record<string, string> = {
 export default function ProjectsSection() {
   return (
     <section id="projects" className="py-24 md:py-32 bg-[#070d1a] relative overflow-hidden">
-      <div className="absolute bottom-0 right-0 w-96 h-96 bg-cyan-400/5 rounded-full blur-[100px] pointer-events-none" />
+      <div className="absolute bottom-0 right-0 w-96 h-96 bg-emerald-400/5 rounded-full blur-[100px] pointer-events-none" />
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section label */}
@@ -67,11 +67,11 @@ export default function ProjectsSection() {
           transition={{ duration: 0.5 }}
           className="flex items-center gap-3 mb-4"
         >
-          <span className="text-indigo-400 font-mono text-sm tracking-[0.3em] uppercase">03 /</span>
+          <span className="text-emerald-400 font-mono text-sm tracking-[0.3em] uppercase">03 /</span>
           <span className="text-white font-bold text-3xl md:text-4xl" style={{ fontFamily: "'Syne', sans-serif" }}>
             Projects
           </span>
-          <div className="flex-1 h-px bg-gradient-to-r from-indigo-500/30 to-transparent ml-4" />
+          <div className="flex-1 h-px bg-gradient-to-r from-emerald-500/30 to-transparent ml-4" />
         </motion.div>
 
         <motion.p
@@ -126,16 +126,14 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-60px" }}
       transition={{ duration: 0.5, delay: index * 0.1 }}
-      whileHover={{ y: -4 }}
-      className={`group relative rounded-2xl border bg-white/[0.03] backdrop-blur-sm p-6 transition-all duration-300 hover:bg-white/[0.06] hover:shadow-2xl hover:shadow-indigo-900/20 ${
+      whileHover={{ y: -4 }}              className={`relative rounded-2xl border bg-white/[0.03] backdrop-blur-sm p-6 transition-all duration-300 hover:bg-white/[0.06] hover:shadow-2xl hover:shadow-emerald-900/20 ${
         project.featured
-          ? "border-indigo-500/30 hover:border-indigo-400/50"
+          ? "border-emerald-500/30 hover:border-emerald-400/50"
           : "border-white/8 hover:border-white/15"
-      }`}
-    >
+      }`}    >
       {project.featured && (
         <div className="absolute top-4 right-4">
-          <span className="text-xs font-mono text-indigo-400 bg-indigo-500/10 border border-indigo-500/20 px-2 py-1 rounded-md">
+          <span className="text-xs font-mono text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 px-2 py-1 rounded-md">
             Featured
           </span>
         </div>
@@ -143,8 +141,8 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
 
       {/* Top row */}
       <div className="flex items-start justify-between mb-4">
-        <div className="w-10 h-10 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center">
-          <FolderOpen className="w-5 h-5 text-indigo-400" />
+        <div className="w-10 h-10 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center">
+          <FolderOpen className="w-5 h-5 text-emerald-400" />
         </div>
         <div className="flex items-center gap-2 mt-1">
           {project.github !== undefined || true ? (

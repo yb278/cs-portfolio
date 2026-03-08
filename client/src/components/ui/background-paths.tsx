@@ -13,7 +13,7 @@ function FloatingPaths({ position }: { position: number }) {
     } ${343 - i * 6}C${616 - i * 5 * position} ${470 - i * 6} ${
       684 - i * 5 * position
     } ${875 - i * 6} ${684 - i * 5 * position} ${875 - i * 6}`,
-    color: `rgba(99,102,241,${0.08 + i * 0.02})`,
+    color: `rgba(16,185,129,${0.08 + i * 0.02})`,
     width: 0.5 + i * 0.03,
   }));
 
@@ -47,8 +47,8 @@ function FloatingPaths({ position }: { position: number }) {
         ))}
         <defs>
           <linearGradient id="pathGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stopColor="#6366f1" />
-            <stop offset="100%" stopColor="#22d3ee" />
+            <stop offset="0%" stopColor="#10b981" />
+            <stop offset="100%" stopColor="#34d399" />
           </linearGradient>
         </defs>
       </svg>
@@ -78,8 +78,8 @@ export function BackgroundPaths({
 
       {/* Radial glow at center */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-indigo-600/10 blur-[120px]" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] rounded-full bg-cyan-400/10 blur-[80px]" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-emerald-600/10 blur-[120px]" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] rounded-full bg-emerald-400/10 blur-[80px]" />
       </div>
 
       <div className="relative z-10 container mx-auto px-4 md:px-6 text-center">
@@ -93,7 +93,7 @@ export function BackgroundPaths({
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 0.8 }}
-            className="text-indigo-400 font-mono text-sm md:text-base tracking-[0.3em] uppercase mb-6"
+            className="text-emerald-400 font-mono text-sm md:text-base tracking-[0.3em] uppercase mb-6"
           >
             Computer Science Student
           </motion.p>
@@ -115,7 +115,7 @@ export function BackgroundPaths({
                       stiffness: 150,
                       damping: 25,
                     }}
-                    className="inline-block text-transparent bg-clip-text bg-gradient-to-br from-white via-indigo-200 to-cyan-300"
+                    className="inline-block text-transparent bg-clip-text bg-gradient-to-br from-white via-emerald-200 to-emerald-300"
                   >
                     {letter}
                   </motion.span>
@@ -142,8 +142,8 @@ export function BackgroundPaths({
             className="flex flex-col sm:flex-row gap-4 justify-center items-center"
           >
             <div
-              className="inline-block group relative bg-gradient-to-b from-indigo-500/20 to-cyan-500/10
-              p-px rounded-2xl backdrop-blur-lg overflow-hidden shadow-lg hover:shadow-indigo-500/25 transition-shadow duration-300"
+              className="inline-block group relative bg-gradient-to-b from-emerald-500/20 to-emerald-500/10
+              p-px rounded-2xl backdrop-blur-lg overflow-hidden shadow-lg hover:shadow-emerald-500/25 transition-shadow duration-300"
             >
               <Button
                 variant="ghost"
@@ -168,7 +168,7 @@ export function BackgroundPaths({
 
             <motion.a
               href="#contact"
-              className="text-slate-400 hover:text-indigo-300 transition-colors duration-200 text-sm font-medium tracking-wide underline underline-offset-4"
+              className="text-slate-400 hover:text-emerald-300 transition-colors duration-200 text-sm font-medium tracking-wide underline underline-offset-4"
               whileHover={{ x: 4 }}
             >
               Get in touch
@@ -186,7 +186,7 @@ export function BackgroundPaths({
       >
         <span className="text-slate-500 text-xs tracking-widest uppercase font-mono">Scroll</span>
         <motion.div
-          className="w-px h-12 bg-gradient-to-b from-indigo-500/60 to-transparent"
+          className="w-px h-12 bg-gradient-to-b from-emerald-500/60 to-transparent"
           animate={{ scaleY: [0, 1, 0], originY: 0 }}
           transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
         />
