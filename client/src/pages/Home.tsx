@@ -1,25 +1,42 @@
-import { Button } from "@/components/ui/button";
-import { Loader2 } from "lucide-react";
-import { Streamdown } from 'streamdown';
-
 /**
- * All content in this page are only for example, replace with your own feature implementation
- * When building pages, remember your instructions in Frontend Best Practices, Design Guide and Common Pitfalls
+ * Design: Midnight Glassmorphism + Flowing Paths
+ * - Dark navy-black (#050a14) base
+ * - Electric indigo (#6366f1) primary, soft cyan (#22d3ee) secondary
+ * - Syne display font, Inter body
+ * - BackgroundPaths animated hero from 21st.dev
  */
+
+import Navbar from "@/components/Navbar";
+import { BackgroundPaths } from "@/components/ui/background-paths";
+import AboutSection from "@/components/AboutSection";
+import SkillsSection from "@/components/SkillsSection";
+import ProjectsSection from "@/components/ProjectsSection";
+import ContactSection from "@/components/ContactSection";
+import Footer from "@/components/Footer";
+
 export default function Home() {
-  // If theme is switchable in App.tsx, we can implement theme toggling like this:
-  // const { theme, toggleTheme } = useTheme();
+  const scrollToProjects = () => {
+    const el = document.querySelector("#projects");
+    if (el) el.scrollIntoView({ behavior: "smooth" });
+  };
 
   return (
-    <div className="min-h-screen flex flex-col">
-      <main>
-        {/* Example: lucide-react for icons */}
-        <Loader2 className="animate-spin" />
-        Example Page
-        {/* Example: Streamdown for markdown rendering */}
-        <Streamdown>Any **markdown** content</Streamdown>
-        <Button variant="default">Example Button</Button>
-      </main>
+    <div className="min-h-screen bg-[#050a14]">
+      <Navbar />
+
+      {/* Hero — BackgroundPaths from 21st.dev */}
+      <BackgroundPaths
+        title="Your Name"
+        subtitle="I build elegant, performant web applications and love diving deep into algorithms, systems, and everything in between."
+        ctaLabel="View My Projects"
+        onCta={scrollToProjects}
+      />
+
+      <AboutSection />
+      <SkillsSection />
+      <ProjectsSection />
+      <ContactSection />
+      <Footer />
     </div>
   );
 }
