@@ -26,7 +26,7 @@ export default function Home() {
 
       {/* Hero — BackgroundPaths from 21st.dev */}
       <BackgroundPaths
-        title="Yaseen Barlas"
+        title="Your Name"
         subtitle="I build elegant, performant web applications and love diving deep into algorithms, systems, and everything in between."
         ctaLabel="View My Projects"
         onCta={scrollToProjects}

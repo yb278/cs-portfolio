@@ -11,14 +11,14 @@ import { GraduationCap, MapPin, Coffee, Sparkles } from "lucide-react";
 const AVATAR_URL = "https://d2xsxph8kpxj0f.cloudfront.net/310519663414112000/WUqPBPULMDeNrwceZH5ywc/avatar-placeholder-JZrk8ero4C4DNsRpNMeker.webp";
 
 const stats = [
-  { value: "2nd", label: "Year CS Student" },
+  { value: "3rd", label: "Year CS Student" },
   { value: "10+", label: "Projects Built" },
   { value: "5+", label: "Languages Known" },
   { value: "∞", label: "Cups of Coffee" },
 ];
 
 const highlights = [
-  { icon: GraduationCap, text: "City St George's, University of London"},
+  { icon: GraduationCap, text: "Computer Science, University" },
   { icon: MapPin, text: "Open to Remote & Relocation" },
   { icon: Coffee, text: "Fuelled by caffeine & curiosity" },
   { icon: Sparkles, text: "Passionate about clean code" },
